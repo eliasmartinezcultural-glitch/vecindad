@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101714">
+<title>VECINDAD — Entender. Preguntar. Participar.</title>
+<meta name="description" content="Guía visual para entender cómo funciona San Patricio del Chañar y aprender a investigar sus temas con fuentes y documentos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="VECINDAD inicio"><span class="brand-mark">V</span><span>VECINDAD</span></a>
+  <button class="about-btn" id="aboutBtn">¿Cómo funciona?</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">SAN PATRICIO DEL CHAÑAR · GUÍA VISUAL</p>
+      <h1>Entender.<br><em>Preguntar.</em><br>Participar.</h1>
+      <p class="hero-lead">Una forma simple de entender cómo funciona nuestra comunidad, quién decide, qué dicen las normas y dónde encontrar la evidencia.</p>
+      <div class="search-wrap">
+        <span>⌕</span><input id="search" type="search" placeholder="¿Qué querés entender?" autocomplete="off">
+      </div>
+    </div>
+    <div class="hero-orbit" aria-hidden="true">
+      <div class="orbit-card c1">¿Quién decide?</div>
+      <div class="orbit-card c2">¿Qué dice la norma?</div>
+      <div class="orbit-card c3">¿Cómo lo sabemos?</div>
+      <div class="orbit-center">?</div>
+    </div>
+  </section>
+
+  <section class="question-zone">
+    <div class="section-head">
+      <div><span class="kicker">01 · ELEGÍ UNA PUERTA</span><h2>¿Qué querés entender?</h2></div>
+      <p>No necesitás conocer palabras jurídicas. Empezamos por tu pregunta.</p>
+    </div>
+    <div class="doors" id="doors"></div>
+  </section>
+
+  <section class="method">
+    <div class="method-intro">
+      <span class="kicker">02 · EL MOTOR</span>
+      <h2>Una misma forma de analizar cualquier tema.</h2>
+      <p>Desde una obra hasta la historia del territorio. Desde el presupuesto hasta los pueblos originarios. Cambia el tema; el método permanece.</p>
+    </div>
+    <div class="method-grid">
+      <article><b>01</b><strong>Pregunta</strong><span>¿Qué queremos saber?</span></article>
+      <article><b>02</b><strong>Contexto</strong><span>¿Qué necesitamos conocer primero?</span></article>
+      <article><b>03</b><strong>Actores</strong><span>¿Quiénes intervienen?</span></article>
+      <article><b>04</b><strong>Competencia</strong><span>¿Quién puede decidir?</span></article>
+      <article><b>05</b><strong>Norma</strong><span>¿Qué regla corresponde?</span></article>
+      <article><b>06</b><strong>Evidencia</strong><span>¿Qué documento lo demuestra?</span></article>
+      <article><b>07</b><strong>Escenarios</strong><span>¿Qué puede pasar?</span></article>
+      <article><b>08</b><strong>Acción</strong><span>¿Qué puede hacer un vecino?</span></article>
+    </div>
+  </section>
+
+  <section class="case-lab">
+    <div class="case-copy">
+      <span class="kicker">03 · LABORATORIO DE CASOS</span>
+      <h2>No te damos solamente una respuesta.<br><em>Te enseñamos a encontrarla.</em></h2>
+      <p>Una afirmación puede ser cierta, incompleta, discutida o todavía no demostrada. VECINDAD separa lo que sabemos de lo que estamos buscando.</p>
+      <button class="primary" id="caseBtn">Abrir un caso</button>
+    </div>
+    <div class="evidence-stack">
+      <div class="evidence verified"><span>●</span><div><b>SABEMOS</b><small>Hay una fuente que lo respalda.</small></div></div>
+      <div class="evidence looking"><span>●</span><div><b>ESTAMOS BUSCANDO</b><small>La pregunta existe; falta evidencia.</small></div></div>
+      <div class="evidence unknown"><span>●</span><div><b>NO ESTÁ COMPROBADO</b><small>No presentamos una afirmación como hecho.</small></div></div>
+    </div>
+  </section>
+
+  <section class="sources">
+    <div class="section-head"><div><span class="kicker">04 · FUENTES</span><h2>El conocimiento tiene de dónde salir.</h2></div><p>La interfaz es simple. La base documental es profunda.</p></div>
+    <div class="source-grid">
+      <div class="source-card"><span>01</span><h3>Carta Orgánica Municipal</h3><p>El marco institucional central para entender competencias, derechos, órganos y funcionamiento municipal.</p></div>
+      <div class="source-card"><span>02</span><h3>Ordenanzas y reglamentos</h3><p>Las reglas concretas que regulan materias de competencia municipal.</p></div>
+      <div class="source-card"><span>03</span><h3>Decretos y actos</h3><p>Decisiones y acciones administrativas que permiten estudiar casos concretos.</p></div>
+      <div class="source-card"><span>04</span><h3>Fuentes externas</h3><p>Normas provinciales y nacionales, organismos de control, documentos históricos y otras fuentes pertinentes.</p></div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="closing-mark">V</div>
+    <p>La pregunta puede ser pequeña.<br><strong>El método no.</strong></p>
+  </section>
+</main>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close" data-close aria-label="Cerrar">×</button>
+    <span class="kicker">MOTOR VECINDAD</span>
+    <h2 id="modalTitle">Analizar antes de concluir.</h2>
+    <div id="modalBody"></div>
+  </section>
+</div>
+
+<footer>
+  <span>VECINDAD · Proyecto educativo ciudadano</span>
+  <span>Desarrollo: Ocarina Producciones · Elías Martínez</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
